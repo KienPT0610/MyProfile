@@ -4,9 +4,11 @@
     <title>Kien PT Profile</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/icontitle.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script/script.js"></script>
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; color: antiquewhite;}
     .w3-pink,.w3-hover-pink:hover{color:#fff!important;background-color:#bc2f5e!important}
@@ -36,6 +38,11 @@
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>PHOTOS</p>
   </a>
+  <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hover-pink">
+    <i class="fa fa-dropbox w3-xxlarge"></i>
+    <!-- <i class="fa fa-code w3-xxlarge"></i>  -->
+    <p>PROJECT</p>
+  </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-pink">
     <i class="fa fa-envelope w3-xxlarge"></i>
     <p>CONTACT</p>
@@ -47,7 +54,8 @@
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
     <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <!-- <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a> -->
+    <a href="#project" class="w3-bar-item w3-button" style="width:25% !important">PROJECT</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -62,11 +70,11 @@
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-white w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">Pham Trung Kien</h2>
+    <h2 class="w3-text-light-grey">Pham Trung Kien </h2>
     <hr style="width:200px" class="w3-opacity">
     <p>
-        Nick Name: John Belus
-        <br>
+        Nick Name: John Belus<br>
+        Sex: <i class= "fa fa-mars"></i><br>
         Kien PT is a concept <br>
         The efforts of the present are the results of the future
     </p>
@@ -184,6 +192,42 @@
   <!-- End Portfolio Section -->
   <!-- </div> -->
 
+  <!-- Project of me -->
+  <div class=" w3-content w3-text-white" id="project">
+    <h2 class="w3-text-light-grey">My Project</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+        
+        <p> <i class="fa fa fa-user-circle-o fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> My profile of me
+          <button class="w3-margin-left view" onclick='openTab("./index.html")'>
+            <i class="fa fa-eye"></i> View
+          </button>
+        </p>
+
+        <p> <i class="fa fa-gears fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Tool tiktok, facebook
+          <button class="w3-margin-left" onclick='openLink("https://github.com/KienPT0610/tiktok2")'>
+            <i class="fa fa-eye"></i> View
+          </button>
+        </p>
+
+        <p> <i class="fa fa-file-code-o fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Source code PTIT
+          <button class="w3-margin-left" onclick='openLink("https://github.com/KienPT0610/COPEPTIT")'>
+            <i class="fa fa-eye"></i> View
+          </button>
+        </p>
+
+        <p> <i class="fa fa-code fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> SmartContract
+          <button class="w3-margin-left" onclick='openLink("https://github.com/KienPT0610/COPEPTIT")'>
+            <i class="fa fa-eye"></i> View
+          </button>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-white" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
@@ -193,8 +237,8 @@
       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chinh Kinh, Nhan Chinh, Thanh Xuan, Ha Noi</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 0867.576.501</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: fbkienpt@mail.com</p>
-      <p><a href="https://www.facebook.com/kienpt.pt/"><i class="fa fa-facebook-official fa-fw w3-text-white w3-xxlarge w3-margin-right"></i></a>Facebook: Kien PT</p>
-      <p><a href=""><i class="fa fa-twitter fa-fw w3-text-white w3-xxlarge w3-margin-right"></i></a></p>
+      <p><a href="https://www.facebook.com/kienpt.pt/"><i class="fa fa-facebook-official fa-fw w3-text-white w3-xxlarge w3-margin-right"></i></a>Click on the icon</p>
+      <p><a href="https://github.com/KienPT0610"><i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"></i></a>Click on the icon</p>
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
