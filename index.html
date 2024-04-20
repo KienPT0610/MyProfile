@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./src/style.css">
     <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif; color: antiquewhite;}
     .w3-pink,.w3-hover-pink:hover{color:#fff!important;background-color:#bc2f5e!important}
@@ -22,6 +23,8 @@
     </style>
   </head>
 <body class="w3-pink">
+  <div id="sakura"></div>
+  <script src="script2.js"></script>
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -129,7 +132,7 @@
           <li class="w3-padding-16">Photography</li>
           <li class="w3-padding-16">5GB Storage</li>
           <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
+          <li class="w3-padding-16">  
             <h2>$ 10</h2>
             <span class="w3-opacity">per month</span>
           </li>
@@ -218,9 +221,12 @@
         </p>
 
         <p> <i class="fa fa-code fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> SmartContract
-          <button class="w3-margin-left" onclick='openLink("https://github.com/KienPT0610/BlockChain")'>
+          <button class="w3-margin-left" id="show-menu-smartcontract" onclick='display("show-menu-smartcontract", "smart-contract-menu")'>
             <i class="fa fa-eye"></i> View
           </button>
+          <div id="smart-contract-menu" style="display: none;">
+            <p>o day nay</p>
+          </div>
         </p>
 
       </div>
@@ -266,7 +272,29 @@
   <i class="fa fa-linkedin w3-hover-opacity"></i>
  <!-- End footer -->
 </footer>
-
+<script src="./Sakura/dist/sakura.css" text="text/javascript"></script>
+    <script>
+      var sakura = new Sakura('body', {
+        colors: [
+          {
+            gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+            gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+            gradientColorDegree: 120,
+          },
+          {
+            gradientColorStart: 'rgba(255,189,189)',
+            gradientColorEnd: 'rgba(227,170,181)',
+            gradientColorDegree: 120,
+          },
+          {
+            gradientColorStart: 'rgba(212,152,163)',
+            gradientColorEnd: 'rgba(242,185,196)',
+            gradientColorDegree: 120,
+          },
+        ],
+        delay: 200,
+      });
+    </script> 
 <!-- END PAGE CONTENT -->
 </div>
 
